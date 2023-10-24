@@ -9,15 +9,19 @@ function App() {
   // let counter = 1;
   const addValue = () => {
     // console.log("Value Added", Math.random())
-    counter = counter + 1;
-    setCounter(counter);
-    console.log("Add", counter);
+    if (counter < 20) {
+      counter = counter + 1;
+      setCounter(counter);
+      console.log("Add", counter);
+    }
   };
   const removeValue = () => {
     // console.log("Value Added", Math.random())
-    counter = counter - 1;
-    setCounter(counter);
-    console.log("Remove", counter);
+    if (counter > 0) {
+      counter = counter - 1;
+      setCounter(counter);
+      console.log("Remove", counter);
+    }
   };
   return (
     <>
