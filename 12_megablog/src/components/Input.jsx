@@ -1,5 +1,4 @@
-import React from "react";
-import { useId } from "react";
+import React, { useId } from "react";
 
 const Input = React.forwardRef(function Input(
   { label, type = "text", className = "", ...props },
@@ -9,7 +8,7 @@ const Input = React.forwardRef(function Input(
   return (
     <div className="w-full">
       {label && (
-        <label className="inLine-block mb-1 pl-1" htmlFor="id">
+        <label className="inline-block mb-1 pl-1" htmlFor={id}>
           {label}
         </label>
       )}

@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 function Header() {
   const authStatus = useSelector((state) => state.auth.status);
   const navigate = useNavigate();
+
   const navItems = [
     {
       name: "Home",
@@ -34,6 +35,7 @@ function Header() {
       active: authStatus,
     },
   ];
+
   return (
     <header className="py-3 shadow bg-gray-500">
       <Container>
